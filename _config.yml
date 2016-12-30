@@ -91,7 +91,7 @@ exclude:
 
 prose:
   rooturl: ''
-  siteurl: 'http://meetcircle.co/'
+  siteurl: 'https://andersbc.github.io/'
   relativeLinks: 'http://meetcircle.co/links.jsonp'
   media: 'media'
   ignore:
@@ -121,8 +121,3 @@ prose:
         field:
           element: "hidden"
           value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
