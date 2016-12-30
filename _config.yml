@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: andersbc/andersbc.github.io
   instagram:
   linkedin:
   pinterest:
@@ -34,7 +34,7 @@ footer-links:
 
 # Put pages in separate sub dir
 # see http://damonbauer.me/organizing-jekyll-pages/
-include: ["_pages"]
+include: ["_pages", "_site"]
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -102,8 +102,6 @@ prose:
     - /blog
     - 404.html
     - .gitignore
-    - _config.yml
-    - atom.xml
     - links.jsonp
     - sitemap.xml
     - styles.scss
@@ -118,20 +116,6 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "nav"
-        field:
-          element: "select"
-          label: "Navigation"
-          placeholder: "Choose Nav type"
-          options:
-            - name: "None"
-              value: "none"
-            - name: "Primary"
-              value: "primary"
-            - name: "Secondary"
-              value: "secondary"
-            - name: "Support"
-              value: "support"
     _site:
       - name: "layout"
         field:
@@ -142,17 +126,3 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "nav"
-        field:
-          element: "select"
-          label: "Navigation"
-          placeholder: "Choose Nav type"
-          options:
-            - name: "None"
-              value: "none"
-            - name: "Primary"
-              value: "primary"
-            - name: "Secondary"
-              value: "secondary"
-            - name: "Support"
-              value: "support"
