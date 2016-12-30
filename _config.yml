@@ -119,7 +119,7 @@ prose:
     _pages:
       - name: "layout"
         field:
-          element: "hidden"
+          element: "text"
           value: "page"
       - name: "title"
         field:
