@@ -12,6 +12,13 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 
 
 ```js
+
+/* Module public and private methods/properties
+-----------------------------------------------
+A module can encapsulate all kinds of private methods, properties (e.g. maintain private state) that we don't 
+want to spread around and pollute global scope. Only the return value is public accessible:
+*/
+
 (function (param1, param2) {
   console.log(param1); // outputs 'first parameter'  
   console.log(param2); // outputs 'second parameter'    
