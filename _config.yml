@@ -106,11 +106,11 @@ prose:
     - sitemap.xml
     - styles.scss
   metadata:
-    _posts:
+    _drafts:
       - name: "layout"
         field:
           element: "hidden"
-          value: "post"
+          value: "page"
       - name: "title"
         field:
           element: "text"
