@@ -34,7 +34,7 @@ footer-links:
 
 # Put pages in separate sub dir
 # see http://damonbauer.me/organizing-jekyll-pages/
-include: ["_pages", "_site"]
+include: ["_pages"]
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -116,7 +116,7 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-    _site:
+    _pages:
       - name: "layout"
         field:
           element: "hidden"
