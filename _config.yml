@@ -88,3 +88,71 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+prose:
+  rooturl: ''
+  siteurl: 'http://meetcircle.co/'
+  relativeLinks: 'http://meetcircle.co/links.jsonp'
+  media: 'media'
+  ignore:
+    - public/
+    - /_includes
+    - /_layouts
+    - /_sass
+    - /blog
+    - 404.html
+    - .gitignore
+    - _config.yml
+    - atom.xml
+    - links.jsonp
+    - sitemap.xml
+    - styles.scss
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "nav"
+        field:
+          element: "select"
+          label: "Navigation"
+          placeholder: "Choose Nav type"
+          options:
+            - name: "None"
+              value: "none"
+            - name: "Primary"
+              value: "primary"
+            - name: "Secondary"
+              value: "secondary"
+            - name: "Support"
+              value: "support"
+    _site:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "nav"
+        field:
+          element: "select"
+          label: "Navigation"
+          placeholder: "Choose Nav type"
+          options:
+            - name: "None"
+              value: "none"
+            - name: "Primary"
+              value: "primary"
+            - name: "Secondary"
+              value: "secondary"
+            - name: "Support"
+              value: "support"
