@@ -42,6 +42,9 @@ Syntax breakdown:
 ```
 {: .codepen-able}
 
+
+### Assigning a variable to the module (or not)
+
 You can assign the module to a variable like this:
 
 ```js
@@ -50,7 +53,6 @@ let myModule = (function () {
 }());
 ```
 {: .codepen-able}
-
 
 This enables you to reference the module later, which is neccesary if you want to use it in an OOP-like syntax like: myModule.someMethod(), or you need to expand it or add sub modules later in your code. 
 
