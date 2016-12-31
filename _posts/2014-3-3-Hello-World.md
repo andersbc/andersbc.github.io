@@ -25,7 +25,6 @@ The basic syntax for a module is:
 (function () {
   // some private and/or public code, which we'll come to later
 }());
-
 ```
 {: .codepen-able}
 
