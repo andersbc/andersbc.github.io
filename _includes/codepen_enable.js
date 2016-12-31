@@ -85,7 +85,7 @@ $(".codepen-able").each(function() {
         '<input type="hidden" name="data" value=\'' + 
           JSONstring + 
           '\'>' + 
-        '<input type="sumbit" value="Edit in codepen" class="codepen-mover-button">' +
+        '<input type="submit" value="Edit on codepen" class="codepen-mover-button">' +
       '</form>';
 
     el.append(form);
