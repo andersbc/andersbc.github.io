@@ -30,7 +30,7 @@ that is executed rigth after its creation.
 
 Syntax breakdown:
 
-- The outer parentheses ```( ...function(){}()... )``` tells js that we now have an _expression_. 
+- The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
 - Inside the parentheses we then have a function declaration, an anonymous (unnamed) function. ```function () {}``` 
 - ..so it is an expression that contains a function declaration. 
 - The extra parentheses () right after the function declaration: function () {} ```()```, tells js to invoke the declared function immediately (we don't have to call it first):
