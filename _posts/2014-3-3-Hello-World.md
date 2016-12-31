@@ -28,6 +28,10 @@ The basic syntax for a module is:
 The module pattern utilizes Immediately-Invoked-Function-Expressions (IIFE), which is a function expression 
 that is executed rigth after its creation. 
 
+note 2 self.. explain function statement vs function expression:
+http://www.2ality.com/2012/09/expressions-vs-statements.html
+
+
 ### Syntax breakdown:
 
 - The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
