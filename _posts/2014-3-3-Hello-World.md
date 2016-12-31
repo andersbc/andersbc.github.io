@@ -66,6 +66,7 @@ However, you will still be able to return something from the module to the globa
 }());
 
 console.log(someNewGlobalVar); // someNewGlobalVar now accesible in global scope```
+```
 {: .codepen-able}
 
 
