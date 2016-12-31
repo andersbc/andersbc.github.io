@@ -1,14 +1,17 @@
 ---
 layout: post
-title: You're up and running!
+title: js design patterns - the module pattern
 published: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+References: 
+- http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html <- the most thorough
+- https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript <- practical advantages/disadvantages
+- http://developer.telerik.com/featured/leveling-up-your-javascript/?utm_source=javascriptweekly&utm_medium=email
+- https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
 
 ```js
