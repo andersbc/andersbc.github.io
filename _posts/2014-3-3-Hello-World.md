@@ -57,7 +57,9 @@ test();
 If, instead of referencing the function, we substitute the reference ```test``` with the function declaration itself, we could compress the example into one statement:
 
 ```js
-let test = function (){alert ('hi!');}() 
+let test = function (){
+	alert ('hi!');
+}(); 
 ```
 {: .codepen-able}
 
