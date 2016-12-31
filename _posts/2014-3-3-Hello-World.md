@@ -54,7 +54,7 @@ test();
 ```
 {: .codepen-able}
 
-In the example ```test``` is a placeholder for a function, so if we substistute ```test``` with the actual function, we get:
+To invoke the function, you reference it ```test``` followed by a pair of parentheses ```()```. If, instead of referencing the function, we substitute the reference for the function decalaration it self, we could rewrite the example as:
 
 ```js
 let test = function (){alert ('hi!');}() 
