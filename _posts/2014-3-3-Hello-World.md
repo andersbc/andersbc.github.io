@@ -43,7 +43,7 @@ Syntax breakdown:
 {: .codepen-able}
 
 
-### Assigning a variable to the module (or not)
+## Assigning a variable to the module (or not)
 
 You can assign the module to a variable like this:
 
@@ -56,7 +56,9 @@ let myModule = (function () {
 
 This enables you to reference the module later, which is neccesary if you want to use it in an OOP-like syntax like: myModule.someMethod(), or you need to expand it or add sub modules later in your code. 
 
-A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, adding event listeners, functionality, etc. without interacting with other pieces of code. In this way a user can just reference the js file and be done, while you get the benefit that the modules internal functions and properties are kept out of global scope.
+A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, adding event listeners, functionality, etc. without interacting with other pieces of code. 
+
+In this way a user can just reference the js file and be done, while you get the benefit that the modules internal functions and properties are kept out of global scope.
 
 However, you will still be able to return something from the module to the global scope, so that other pieces of code can get a handle to something inide the module and intercat with it (it just doesn't hinge on a module name):
 
