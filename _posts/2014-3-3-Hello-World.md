@@ -43,23 +43,26 @@ The extra parenthesesright after the function declaration:  ``` ... ()```, tells
 {: .codepen-able}
 
 
-This might seem slightly odd, but you use the same pinciple when you declare a function and then call it 
+This syntax might seem slightly odd, but you use the same principle when you declare a function and then call it: 
 
 ```js
 // declare a function
 let test = function () {
   alert ('hi!');
 }
-
 // call the function
 test();
-
-// This could be rewritten into one statement:
-let test2 = function (){ alert ('hi again!'); }() 
-
 ```
 {: .codepen-able}
 
+Since ```test``` is just a function declaration, and you it follows that ooes that  This could be rewritten into one statement:
+
+```js
+let test = function (){ 
+	alert ('hi!'); 
+}() 
+```
+{: .codepen-able}
 
 
 
