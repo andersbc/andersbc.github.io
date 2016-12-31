@@ -31,15 +31,14 @@ The basic syntax for a module is:
 
 Breakdown:
 
-- The outer parentheses ```()``` tells js that we now have an expression. 
-- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function.
-- ..so it is an expression that contains a function declaration: ```function () {}``` 
-- The extra parentheses () right after the function declaration: function () {} ```()```, tells js to 
-- invoke the declared function immediately (we don't have to call it first):
+- The outer parentheses ```()``` tells js that we now have an _expression_. 
+- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function. ```function () {}``` 
+- ..so it is an expression that contains a function declaration: 
+- The extra parentheses () right after the function declaration: function () {} ```()```, tells js to invoke the declared function immediately (we don't have to call it first):
 
 ```js
 (function () {
-  console.log('im invoked immediately - no need to call me like a normal function');
+  console.log('im invoked immediately - no need to call me');
 }());
 ```
 {: .codepen-able}
