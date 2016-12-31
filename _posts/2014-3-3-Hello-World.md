@@ -43,7 +43,7 @@ The extra parentheses () right after the function declaration:  ``` ... ()```, t
 {: .codepen-able}
 
 
-You use the same pinciple when you declare a function and then call it 
+This might seem slightly odd, but you use the same pinciple when you declare a function and then call it 
 
 ```js
 // declare a function
