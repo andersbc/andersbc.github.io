@@ -47,7 +47,7 @@ The syntax might seem slightly odd at first, but you use the same principle when
 ```js
 // declare a function
 let test = function () {
-  alert ('hi!');
+	alert ('hi!');
 }
 // To invoke the function, you reference it followed by a pair of parentheses: 
 test();
