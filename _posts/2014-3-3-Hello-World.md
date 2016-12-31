@@ -31,9 +31,9 @@ that is executed rigth after its creation.
 Syntax breakdown:
 
 - The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
-- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function. ```function () {}``` 
-- ..so it is an expression that contains a function declaration. 
-- The extra parentheses () right after the function declaration: function () {} ```()```, tells js to invoke the declared function immediately (we don't have to call it first):
+- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```.... ()```.
+ 
+The extra parentheses () right after the function declaration:  ``` ... ()```, tells js to invoke the declared function immediately (we don't have to call it first):
 
 ```js
 (function () {
@@ -41,6 +41,26 @@ Syntax breakdown:
 }());
 ```
 {: .codepen-able}
+
+
+You use the same pinciple when you declare a function and then call it 
+
+```js
+// declare a function
+let test = function () {
+  alert ('hi!');
+}
+
+// call the function
+test();
+
+// This could be rewritte into one statment:
+let test2 = function (){ alert ('hi again!')}() 
+
+```
+{: .codepen-able}
+
+
 
 
 ## Assigning the module to a variable
