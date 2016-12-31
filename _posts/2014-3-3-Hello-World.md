@@ -49,12 +49,12 @@ The syntax might seem slightly odd at first, but you use the same principle when
 let test = function () {
   alert ('hi!');
 }
-// call the function
+// To invoke the function, you reference it followed by a pair of parentheses ```()```. 
 test();
 ```
 {: .codepen-able}
 
-To invoke the function, you reference it ```test``` followed by a pair of parentheses ```()```. If, instead of referencing the function, we substitute the reference for the function decalaration it self, we could rewrite the example as:
+If, instead of referencing the function, we substitute the reference ```test``` with the function declaration itself, we could rewrite the example to:
 
 ```js
 let test = function (){alert ('hi!');}() 
