@@ -41,4 +41,4 @@ let summationModule = (function () {
 }());
 
 ```
-{: .class1 .class2}
+{: .codepen-able}
