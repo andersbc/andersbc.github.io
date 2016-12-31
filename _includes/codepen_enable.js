@@ -85,7 +85,7 @@ $(".codepen-able").each(function() {
         '<input type="hidden" name="data" value=\'' + 
           JSONstring + 
           '\'>' + 
-        '<input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" width="40" height="40" value="Create New Pen with Prefilled Data" class="codepen-mover-button">' +
+        '<input type="sumbit" value="Edit in codepen" class="codepen-mover-button">' +
       '</form>';
 
     el.append(form);
