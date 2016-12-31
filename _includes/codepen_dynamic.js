@@ -1,22 +1,27 @@
 $(function() {
 $(".codepen-able").each(function() {
 
-    // modified from
+    // andersbc modified the examples in to work with jekyll/github pages:
     // https://blog.codepen.io/documentation/api/prefill/
     // http://codepen.io/chriscoyier/pen/FKxjB
     
     var el = $(this),
-        // type = el.data("type"),
+        type = "",
         codeInside = el.find("code"),
         isCodeInside = codeInside.length,
         HTML = "",
         CSS = "",
         JS = "";
         
-    // determine language
+    // determine language type
+    if (el.hasClass( "language-js" )) {
+        type = "js"; 
+    } else if (el.hasClass( "language-html" )) {
+        type = "html"; 
+    } else if (el.hasClass( "language-css" )) {
+        type = "css"; 
+    }
     
-        
-      
     if (type == "html") {
       if (codeInside) {
         HTML = codeInside.html();
