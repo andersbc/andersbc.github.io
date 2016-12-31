@@ -16,9 +16,6 @@ References:
 
 ## Basic module declaration
 
-The module pattern utilizes Immediately-Invoked-Function-Expressions (IIFE), which is a function expression 
-that is executed rigth after its creation. 
-
 The basic syntax for a module is:
 
 ```js
@@ -27,6 +24,9 @@ The basic syntax for a module is:
 }());
 ```
 {: .codepen-able}
+
+The module pattern utilizes Immediately-Invoked-Function-Expressions (IIFE), which is a function expression 
+that is executed rigth after its creation. 
 
 Syntax breakdown:
 
