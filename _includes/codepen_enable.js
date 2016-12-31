@@ -1,9 +1,23 @@
 $(function() {
 $(".codepen-able").each(function() {
 
-    // andersbc modified the examples in to work with jekyll/github pages:
-    // https://blog.codepen.io/documentation/api/prefill/
-    // http://codepen.io/chriscoyier/pen/FKxjB
+    /*
+    
+    Auto enables codepen editing of markdown js, html or css code blocks
+    
+    andersbc modified the examples in to work with jekyll/github pages:
+    https://blog.codepen.io/documentation/api/prefill/
+    http://codepen.io/chriscoyier/pen/FKxjB
+    
+    Markdown usage example:
+    
+    ```js
+    console.log('it works');
+    // more javascript here
+    ```
+    {: .codepen-able}
+
+*/
     
     var el = $(this),
         type = "",
@@ -24,21 +38,21 @@ $(".codepen-able").each(function() {
     
     if (type == "html") {
       if (codeInside) {
-        HTML = codeInside.html();
+        HTML = codeInside.text();
       } else {
-        HTML = el.html();
+        HTML = el.text();
       }
     } else if (type == "css") {
       if (codeInside) {
-        CSS = codeInside.html();
+        CSS = codeInside.text();
       } else {
-        CSS = el.html();
+        CSS = el.text();
       }
     } else if (type == "js") {
       if (codeInside) {
-        JS = codeInside.html();
+        JS = codeInside.text();
       } else {
-        JS = el.html();
+        JS = el.text();
       }
     }
 
