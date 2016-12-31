@@ -30,10 +30,10 @@ that is executed rigth after its creation.
 
 ### Syntax breakdown:
 
-- The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
-- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
+- **The outer parentheses** ```( ... )``` tells js that we now have an _expression_. 
+- **Inside** the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
  
-The extra parenthesesright after the function declaration:  ``` ... ()```, tells js to invoke the declared function immediately (we don't have to call it first):
+The extra parentheses right after the function declaration  ``` ... ()```, tells js to invoke the declared function immediately (we don't have to call it first):
 
 ```js
 (function () {
@@ -42,8 +42,7 @@ The extra parenthesesright after the function declaration:  ``` ... ()```, tells
 ```
 {: .codepen-able}
 
-
-This syntax might seem slightly odd, but you use the same principle when you declare a function and then call it: 
+The syntax might seem slightly odd at first, but you use the same principle when you declare a function and then call it: 
 
 ```js
 // declare a function
@@ -55,7 +54,7 @@ test();
 ```
 {: .codepen-able}
 
-Since ```test``` is just a function declaration, and you it follows that ooes that  This could be rewritten into one statement:
+In the example ```test``` is a placeholder for a function, so if we substistute ```test``` with the actual function:
 
 ```js
 let test = function (){ 
