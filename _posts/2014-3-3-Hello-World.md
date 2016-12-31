@@ -24,7 +24,6 @@ The basic syntax for a module is:
 ```js
 (function () {
   // some private and/or public code
-  // see examples further down
 }());
 
 ```
