@@ -30,8 +30,8 @@ that is executed rigth after its creation.
 
 ### Syntax breakdown:
 
-- **The outer parentheses** ```( ... )``` tells js that we now have an _expression_. 
-- **Inside** the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
+- The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
+- Inside the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
  
 The extra parentheses after the function declaration  ``` ... ()```, tells js to invoke the declared function immediately (we don't have to call it first):
 
@@ -54,15 +54,12 @@ test();
 ```
 {: .codepen-able}
 
-In the example ```test``` is a placeholder for a function, so if we substistute ```test``` with the actual function:
+In the example ```test``` is a placeholder for a function, so if we substistute ```test``` with the actual function, we get:
 
 ```js
-let test = function (){ 
-	alert ('hi!'); 
-}() 
+let test = function (){alert ('hi!');}() 
 ```
 {: .codepen-able}
-
 
 
 ## Assigning the module to a variable
@@ -76,13 +73,16 @@ let myModule = (function () {
 ```
 {: .codepen-able}
 
-This enables you to reference the module later, which is neccesary if you want to use it in an OOP-like syntax (e.g. ```myModule.someMethod()```), or you need to expand it or add sub modules later in your code. 
+This enables you to reference the module in other prices of code, which is neccesary if you want to use it in an OOP-like syntax (e.g. ```myModule.someMethod()```), or you need to augment it or add sub modules other places in your code (more on that later). 
 
-A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, adding event listeners, functionality, etc. without interacting with other pieces of code. 
+A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, e.g. adding event listeners, functionality, etc. and don't need other pieces of code to have a handle on the module itself. 
 
-In this way a user can just reference the js file and be done, while you get the benefit that the modules internal functions and properties are kept out of global scope.
+In this way a user can just reference the js file and be done, while you maintain the benefit of a self contained package, whith the internal functions and properties kept out of global scope.
 
-However, you will still be able to return something from the module to the global scope, so that other pieces of code can get a handle to something inide the module and intercat with it (it just doesn't hinge on a module name):
+Either way you can return something from the module into the global scope (it just doesn't hinge on a module name):
+
+## Returning something from the module
+
 
 ```js
 (function () {
