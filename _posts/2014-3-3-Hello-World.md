@@ -43,7 +43,7 @@ Syntax breakdown:
 {: .codepen-able}
 
 
-## Assigning a variable to the module (or not)
+## Assigning the module to a variable
 
 You can assign the module to a variable like this:
 
@@ -54,7 +54,7 @@ let myModule = (function () {
 ```
 {: .codepen-able}
 
-This enables you to reference the module later, which is neccesary if you want to use it in an OOP-like syntax like: myModule.someMethod(), or you need to expand it or add sub modules later in your code. 
+This enables you to reference the module later, which is neccesary if you want to use it in an OOP-like syntax (e.g. ```myModule.someMethod()```), or you need to expand it or add sub modules later in your code. 
 
 A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, adding event listeners, functionality, etc. without interacting with other pieces of code. 
 
