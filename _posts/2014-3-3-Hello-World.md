@@ -29,10 +29,10 @@ The basic syntax for a module is:
 ```
 {: .codepen-able}
 
-The outer parentheses () tells js that we now have an expression. 
+The outer parentheses ```()``` tells js that we now have an expression. 
 Inside the parentheses we then have a function declaration, an anonymous (unnamed) function.
-...so it is an expression that contains a function declaration: function () {} 
-The extra parentheses () right after the function declaration: function () {} (), tells js to 
+...so it is an expression that contains a function declaration: ```function () {}``` 
+The extra parentheses () right after the function declaration: function () {} ```()```, tells js to 
 invoke the declared function immediately (we don't have to call it first):
 
 ```js
