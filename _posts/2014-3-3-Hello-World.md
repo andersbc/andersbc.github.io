@@ -13,35 +13,33 @@ References:
 - https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know
 
 
+## Basic module declaration
+
+The module pattern utilizes Immediately-Invoked-Function-Expressions (IIFE), which is a function expression 
+that is executed rigth after its creation. 
+
+The basic syntax for a module is:
 
 ```js
-
-/* Module public and private methods/properties
------------------------------------------------
-A module can encapsulate all kinds of private methods, properties (e.g. maintain private state) that we don't 
-want to spread around and pollute global scope. Only the return value is public accessible:
-*/
-
-(function (param1, param2) {
-  console.log(param1); // outputs 'first parameter'  
-  console.log(param2); // outputs 'second parameter'    
-}('first parameter', 'second parameter'));
-
-let summationModule = (function () {
-  // private stuff - inaccessible to the outside:
-  let total = 0;
-  add = function ( numberToAdd) {
-    total = total + numberToAdd;
-  };
-  
-  // public stuff:
-  return {
-    getTotal: function () {return total;}, 
-    addNumber: function (number) {
-      add(number); 
-    }
-  } 
+(function () {
+  // some private and/or public code
+  // see examples further down
 }());
 
 ```
 {: .codepen-able}
+
+The outer parentheses () tells js that we now have an expression. 
+Inside the parentheses we then have a function declaration, an anonymous (unnamed) function.
+...so it is an expression that contains a function declaration: function () {} 
+The extra parentheses () right after the function declaration: function () {} (), tells js to 
+invoke the declared function immediately (we don't have to call it first):
+
+```js
+(function () {
+  console.log('im invoked immediately - no need to call me like a normal function');
+}());
+```
+{: .codepen-able}
+
+
