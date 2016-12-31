@@ -23,17 +23,23 @@ $(".codepen-able").each(function() {
         type = "",
         codeInside = el.find("code"),
         isCodeInside = codeInside.length,
+        editors = "111", 
         HTML = "",
         CSS = "",
         JS = "";
+
+    // editors: controls which editors are open in codepen. "101" = In this example HTML open, CSS closed, JS open
         
     // determine language type
     if (el.hasClass( "language-js" )) {
         type = "js"; 
+        editors = "001"
     } else if (el.hasClass( "language-html" )) {
         type = "html"; 
+        editors = "100"
     } else if (el.hasClass( "language-css" )) {
         type = "css"; 
+        editors = "010"
     }
     
     if (type == "html") {
@@ -59,6 +65,7 @@ $(".codepen-able").each(function() {
     var data = {
       title              : "",
       description        : "",
+      editors            : editors,                 
       html               : HTML,
       html_pre_processor : "none",
       css                : CSS,
