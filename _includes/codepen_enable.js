@@ -88,14 +88,14 @@ $(".codepen-able").each(function() {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&apos;");
 
-    var form = 
+ var form = 
       '<form action="http://codepen.io/pen/define" method="POST" target="_blank">' + 
         '<input type="hidden" name="data" value=\'' + 
           JSONstring + 
           '\'>' + 
-        '<input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" width="40" height="40" value="Open in codepen" class="codepen-mover-button">' +
+        '<input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" width="40" height="40" value="Create New Pen with Prefilled Data" class="codepen-mover-button">' +
       '</form>';
-
+    
     preEl.append(form);
 
   });
