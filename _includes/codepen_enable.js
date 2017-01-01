@@ -1,13 +1,11 @@
-$(function() {
-$(".codepen-able").each(function() {
-
-    /*
+/*
     
     Auto enables codepen editing of markdown js, html or css code blocks
+    credit:
+    - https://blog.codepen.io/documentation/api/prefill/
+    - http://codepen.io/chriscoyier/pen/FKxjB
     
-    andersbc modified the examples in to work with jekyll/github pages:
-    https://blog.codepen.io/documentation/api/prefill/
-    http://codepen.io/chriscoyier/pen/FKxjB
+    andersbc modified the examples in to work with jekyll/github pages
     
     Markdown usage example:
     
@@ -18,9 +16,12 @@ $(".codepen-able").each(function() {
     {: .codepen-able}
 
 */
-    
+
+$(function() {
+$(".codepen-able").each(function() {
     var el = $(this),
         type = "",
+        preEl = el.find("pre"),
         codeInside = el.find("code"),
         isCodeInside = codeInside.length,
         editors = "111", 
@@ -95,7 +96,7 @@ $(".codepen-able").each(function() {
         '<input type="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cp-arrow-right.svg" width="40" height="40" value="Open in codepen" class="codepen-mover-button">' +
       '</form>';
 
-    el.append(form);
+    preEl.append(form);
 
   });
   
