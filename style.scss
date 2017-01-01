@@ -291,7 +291,17 @@ footer {
   position: absolute;
   bottom: 5px;
   right: 8px;
-}
+
+  background:none!important;
+  border:none; 
+  padding:0!important;
+    
+  font-family:arial,sans-serif; /*input has OS specific font-family*/
+  color:#069;
+  text-decoration:underline;
+  cursor:pointer;
+}	
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
