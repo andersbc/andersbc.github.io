@@ -93,7 +93,7 @@ $(".codepen-able").each(function() {
         '<input type="hidden" name="data" value=\'' + 
           JSONstring + 
           '\'>' + 
-        '<input type="submit" value="View i CodePen" class="codepen-mover-button">' +
+        '<input type="submit" value="View in CodePen" class="codepen-mover-button">' +
       '</form>';
     
     preEl.append(form);
