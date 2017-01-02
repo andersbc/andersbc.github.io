@@ -86,8 +86,8 @@ $(".codepen-able").each(function() {
           JSONstring + 
           '\'>' +
         '<div class="code-example-actions">' +
-            '<input type="submit" value="View in CodePen" class="codepen-mover-button">' + '<span>&nbsp; | &nbsp;</span>' +
-            '<button type="button" class="clipboard-copy-button" data-clipboard-text ="' + copyToClipboard + '">Copy code</button>' + 
+            '<input type="submit" value="View in CodePen" class="codepen-mover-button">' + '<span> | </span>' +
+            '<button type="button" class="clipboard-copy-button" data-clipboard-action="copy" data-clipboard-text ="' + copyToClipboard + '">Copy code</button>' + 
         '</div>' +
       '</form>';
     preEl.append(form);
