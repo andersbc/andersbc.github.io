@@ -287,11 +287,14 @@ footer {
   text-align: center;
 }
 
-.codepen-mover-button {
-  position: absolute;
-  bottom: 5px;
-  right: 8px;
 
+.code-example-actions {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+.codepen-mover-button {
   background:none!important;
   border:none; 
   padding:0!important;
