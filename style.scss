@@ -298,11 +298,15 @@ footer {
   background:none!important;
   border:none; 
   padding:0!important;
-    
   font-family:arial,sans-serif; /*input has OS specific font-family*/
-  color:#737474;
+  color:#4d4d4d;
   cursor:pointer;
 }	
+
+.codepen-mover-button:hover, .clipboard-copy-button:hover{
+  color:#737474;
+}	
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
