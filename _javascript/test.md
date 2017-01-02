@@ -88,6 +88,8 @@ let myModule = (function () {
 
 This enables you to reference the module in other pieces of code, which is neccesary if you want to use it in an OOP-like syntax (e.g. ```myModule.someMethod()```), or you need to augment it or add sub modules other places in your code (more on that later). 
 
+### A use case for NOT assigning the module to a variable
+
 A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, e.g. adding event listeners, functionality, etc. but don't need other pieces of code to have a handle on the module itself. 
 
 In this way a user can just reference the js file and be done, while you maintain the benefit of a self contained package, with its internal functions and properties kept out of global scope.
