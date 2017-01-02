@@ -93,5 +93,7 @@ $(".codepen-able").each(function() {
     preEl.append(form);
 
   });
-  
+
+  // instantiate clipboard.js on the copy buttons
+  new Clipboard('.clipboard-copy-button');    
 });
