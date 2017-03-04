@@ -4,6 +4,8 @@ title: js design patterns - the module pattern - real
 published: true
 ---
 
+Note: this page is about the classical javascript 'module pattern' (pre-es6). Es6 has a different module construct, with exports/imports, etc. 
+
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
 
 In OOP terms the module pattern gives us a singleton, i.e. a single-instance structure that cannot be instantiated more than once. So the module pattern cannot, in itself, be used to instantiate multiple new objects based on the module. It only gives you one, single object.  (I'm sure there are some workarounds where you use the module as a container and in that container can construct new objects..<- check up on that)   
@@ -31,15 +33,11 @@ The basic syntax for a module is:
 {: .codepen-able}
 
 The module pattern utilizes Immediately-Invoked-Function-Expressions (IIFE), which is a function expression 
-that is executed rigth after its creation. 
-
-note 2 self.. explain function statement vs function expression:
-http://www.2ality.com/2012/09/expressions-vs-statements.html
-
+that is executed right after its creation. 
 
 ### Syntax breakdown:
 
-- The outer parentheses ```( ... )``` tells js that we now have an _expression_. 
+- The outer parentheses ```( ... )``` tells js that we now have an _expression_. Without these parens the ```function``` keyword would be intepreted as a statement.
 - Inside the parentheses we then have a function declaration, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
  
 The extra parentheses after the function declaration  ``` ... ()```, tells js to invoke the declared function immediately (we don't have to call it first):
@@ -73,6 +71,16 @@ let test = function () {
 {: .codepen-able}
 
 ... a function invoked immediately after it is declared.
+
+However, if  ```test``` with the function declaration itself, we could compress the example into one statement:
+
+```js
+function () {
+	alert ('hi!');
+}(); 
+```
+{: .codepen-able}
+
 
 
 ## Assigning the module to a variable
