@@ -37,7 +37,7 @@ that is executed right after its creation.
 
 ### Syntax breakdown:
 
-- The outer parentheses ```( ... )``` tells js that we now have an _expression_. Without these parens the ```function``` keyword would be interpreted as the beginning of a function statement (```function aName (){...}```, which it is not - i.e. it is not a .
+- The outer parentheses ```( ... )``` tells js that we now have an _expression_ (a function expression). Without these parens the ```function``` keyword would be interpreted as the beginning of a function declaration, ```function aName (){...}```, which it is not, i.e. it is not a function statement
 - Inside the parentheses we then have the function definition, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
  
 The extra parentheses after the function declaration  ``` ... ()```, tells js to invoke the function immediately (we don't have to call it first):
