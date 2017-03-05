@@ -4,7 +4,6 @@ layout: default
 
 <article class="page">
   <p>{{ page.url }} </p>
-  <p>{{ javascript.url }} </p>
   <ol class="breadcrumb">
 <li><a href="{{ site.baseurl }}/">Home</a></li>
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
@@ -15,6 +14,7 @@ layout: default
     {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
     {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
     {% for breadcrumb_page in site.pages %}
+        <li>breadcrumb_page</li>    
         {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
         {% assign j = forLoopMaxInt | plus: 0 %}
             <li {% if i == j %}class="active"{% endif %}>
