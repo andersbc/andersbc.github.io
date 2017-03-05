@@ -3,9 +3,8 @@ layout: default
 ---
 
 <article class="page">
-  <p>the collection:: {{ page.collection }}, the url: {{ page.url }} </p>
   <p class="breadcrumb">
-<a href="{{ site.baseurl }}/">Home</a> /
+<a href="{{ site.baseurl }}/">home</a> /
 {% capture current_collection_name %}{{ page.collection }}{% endcapture %}
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
