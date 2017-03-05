@@ -4,31 +4,29 @@ layout: default
 
 <article class="page">
   <p>the collection: {{ page.collection }}, the url: {{ page.url }} </p>
-  <ol class="breadcrumb">
-<li><a href="{{ site.baseurl }}/">Home</a></li>
+  <p class="breadcrumb">
+<a href="{{ site.baseurl }}/">Home</a> /
 {% capture current_collection_name %}{{ page.collection }}{% endcapture %}
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
 {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
 {% for i in (1..forLoopMaxInt) %}
-    <li>splitted part: {{ splitted_url_parts[i] }}</li> 
     {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index/{% endcapture %}
     {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
     {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
     {% assign current_collection = site[current_collection_name] %}
     {% for breadcrumb_page in current_collection %}
-        <li>|{{ breadcrumb_page.url }}| -- |{{ current_breadcrumb_url }}| {{ i }}</li>    
         {% if ((current_breadcrumb_url == breadcrumb_page.url) or (current_breadcrumb_md_url == breadcrumb_page.url))  %}
-        <li>match!</li>    
         {% assign j = forLoopMaxInt | plus: 0 %}
-            <li {% if i == j %}class="active"{% endif %}>
+            {% if i == j %}class="active"{% endif %}>
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-                <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
-            </li>
-        {% endif %}
+                <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}} / </a>
+     {% else %}
+            <span>{{ splitted_url_parts[i] }} / </span>
+    {% endif %}
     {% endfor %}
 {% endfor %}
-</ol>
+</p>
 
   <h1>{{ page.title }}</h1>
 
