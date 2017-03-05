@@ -3,7 +3,7 @@ layout: page
 title: Js design patterns - the module pattern
 published: true
 categories: js-design-patterns
-slug: the module pattern
+slug: module
 ---
 
 Note: this page is about the classical javascript 'module pattern', and not the specific es6+ module construct, with exports/imports etc. 
