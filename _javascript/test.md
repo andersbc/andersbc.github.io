@@ -1,6 +1,6 @@
 ---
 layout: page
-title: js design patterns - the module pattern - real
+title: the module pattern
 published: true
 categories: jsdesignpatterns
 ---
