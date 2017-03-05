@@ -4,7 +4,7 @@ title: js design patterns - the module pattern - real
 published: true
 ---
 
-Note: this page is about the classical javascript 'module pattern' (pre-es6). Es6 has a different module construct, with exports/imports, etc. 
+Note: this page is about the classical javascript 'module pattern', and not the specific es6+ module construct, with exports/imports etc. 
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
 
@@ -37,7 +37,7 @@ that is executed right after its creation.
 
 ### Syntax breakdown:
 
-- The outer parentheses ```( ... )``` tells js that we now have an _expression_ (a function expression). Without these parens the ```function``` keyword would be interpreted as the beginning of a function declaration, ```function aName (){...}```, which it is not, i.e. it is not a function statement
+- The outer parentheses ```( ... )``` tells js that we now have an _expression_ (a function expression). Without these parens the ```function``` keyword would be interpreted as the beginning of a function declaration: ```function aName (){...}```, which it is not, i.e. it is not a statement of a function, that you will reference later 
 - Inside the parentheses we then have the function definition, an anonymous (unnamed) function: ```function () {}``` followed by an extra pair of parentheses ```()```.
  
 The extra parentheses after the function declaration  ``` ... ()```, tells js to invoke the function immediately (we don't have to call it first):
@@ -73,7 +73,6 @@ let test = function () {
 ... a function invoked immediately after it is declared.
 
 
-
 ## Assigning the module to a variable
 
 You can assign the module to a variable like this:
@@ -91,7 +90,7 @@ This enables you to reference the module in other pieces of code, which is necce
 
 A use case for NOT assigning the module to a variable would be if you just want the module to run immediately on page load and do a bunch of stuff to the DOM, e.g. adding event listeners, functionality, etc. but don't need other pieces of code to have a handle on the module itself. 
 
-In this way a user can just reference the js file and be done, while you maintain the benefit of a self contained package, with its internal functions and properties kept out of global scope.
+In this way a user can just reference the js file with the module and be done, while you maintain the benefit of a self contained package, with its internal functions and properties kept out of global scope.
 
 Either way you can return something from the module into the global scope (it just doesn't hinge on a module name):
 
