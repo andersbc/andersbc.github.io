@@ -16,7 +16,6 @@ collections:
     output: true
     permalink: /javascript/:categories/:title/
 
-
 #
 # Flags below are optional
 #
