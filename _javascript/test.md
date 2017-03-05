@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The module pattern
+title: Js design patterns - the module pattern
 published: true
 categories: js-design-patterns
 slug: the module pattern
