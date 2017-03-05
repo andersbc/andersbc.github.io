@@ -2,7 +2,7 @@
 layout: default
 title: Javascript
 published: true
-breadcrumb: index
+breadcrumb: javascript
 ---
 
 <p>This should be the index page for javascript. </p>
