@@ -4,7 +4,7 @@ layout: default
 
 <article class="page">
   <p class="breadcrumb">
-<a href="{{ site.baseurl }}/">home</a> /
+<a href="{{ site.baseurl }}/">home</a> 
 {% capture current_collection_name %}{{ page.collection }}{% endcapture %}
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
@@ -17,9 +17,8 @@ layout: default
     {% for breadcrumb_page in current_collection %}
         {% if ((current_breadcrumb_url == breadcrumb_page.url) or (current_breadcrumb_md_url == breadcrumb_page.url))  %}
         {% assign j = forLoopMaxInt | plus: 0 %}
-            {% if i == j %}class="active"{% endif %}>
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-                <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}} / </a>
+                <a {% if i == j %} class="active" {% endif %}> href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}} / </a>
      {% else %}
             <span>{{ splitted_url_parts[i] }} / </span>
     {% endif %}
