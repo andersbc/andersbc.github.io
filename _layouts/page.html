@@ -17,6 +17,7 @@ layout: default
     {% for breadcrumb_page in site.javascript %}
         <li>{{ breadcrumb_page.url }} -- {{ current_breadcrumb_url }} {{ i }}</li>    
         {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
+        <li>match!</li>    
         {% assign j = forLoopMaxInt | plus: 0 %}
             <li {% if i == j %}class="active"{% endif %}>
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
