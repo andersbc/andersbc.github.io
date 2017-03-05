@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: collectionpage
 title: Js design patterns - the module pattern
 published: true
 categories: js-design-patterns
