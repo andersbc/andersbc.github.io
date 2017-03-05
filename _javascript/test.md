@@ -2,6 +2,7 @@
 layout: page
 title: js design patterns - the module pattern - real
 published: true
+categories: jsdesignpatterns
 ---
 
 Note: this page is about the classical javascript 'module pattern', and not the specific es6+ module construct, with exports/imports etc. 
