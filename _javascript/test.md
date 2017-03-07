@@ -6,7 +6,7 @@ categories: js-design-patterns
 slug: module
 breadcrumb: module
 ---
-{: #main_content}
+
 Note: this page is about the classical javascript 'module pattern' and not the specific es6+ module construct, with exports/imports etc. 
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
