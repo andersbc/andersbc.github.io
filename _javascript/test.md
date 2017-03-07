@@ -6,16 +6,12 @@ categories: js-design-patterns
 slug: module
 breadcrumb: module
 ---
-
+{: #main_content}
 Note: this page is about the classical javascript 'module pattern' and not the specific es6+ module construct, with exports/imports etc. 
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
 
 In OOP terms the module pattern gives us a singleton, i.e. a single-instance structure that cannot be instantiated more than once. So the module pattern cannot, in itself, be used to instantiate multiple new objects based on the module. It only gives you one, single object.  (I'm sure there are some workarounds where you use the module as a container and in that container can construct new objects..<- check up on that)   
-
-
-{: #main_content}
-
 
 ## Basic module declaration
 
