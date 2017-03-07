@@ -13,6 +13,12 @@ JavaScript modules are the most prevalently used design patterns for keeping par
 
 In OOP terms the module pattern gives us a singleton, i.e. a single-instance structure that cannot be instantiated more than once. So the module pattern cannot, in itself, be used to instantiate multiple new objects based on the module. It only gives you one, single object.  (I'm sure there are some workarounds where you use the module as a container and in that container can construct new objects..<- check up on that)   
 
+# test 1
+
+# test 2
+
+# test 3
+
 ## Basic module declaration
 
 The basic syntax for a module is:
