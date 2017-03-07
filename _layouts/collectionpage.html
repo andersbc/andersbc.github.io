@@ -17,20 +17,19 @@ layout: default
     {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
     {% assign current_collection = site[current_collection_name] %}
     {% assign exists_as_page = false %}
-    
     {% for breadcrumb_page in current_collection %}
         {% if ((current_breadcrumb_url == breadcrumb_page.url) or (current_breadcrumb_md_url == breadcrumb_page.url))  %}
             {% assign j = forLoopMaxInt | plus: 0 %}
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
                 <a {% if i == j %} class="active" {% endif %} href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}} / </a>
                 {% assign exists_as_page = true %}
+        {% endif %}
     {% endfor %}
-    
+   
     {% if exists_as_page == false  %}
         <span>{{ splitted_url_parts[i] }} / </span>
     {% endif %}
 
-    
 {% endfor %}
 </p>
   <h1>{{ page.title }}</h1>
