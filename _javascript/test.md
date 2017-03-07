@@ -13,16 +13,6 @@ JavaScript modules are the most prevalently used design patterns for keeping par
 
 In OOP terms the module pattern gives us a singleton, i.e. a single-instance structure that cannot be instantiated more than once. So the module pattern cannot, in itself, be used to instantiate multiple new objects based on the module. It only gives you one, single object.  (I'm sure there are some workarounds where you use the module as a container and in that container can construct new objects..<- check up on that)   
 
-References:
-
-- [http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) <- the most thorough
-- [https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript )<- practical advantages/disadvantages
-- [http://developer.telerik.com/featured/leveling-up-your-javascript/?utm_source=javascriptweekly&utm_medium=email](http://developer.telerik.com/featured/leveling-up-your-javascript/?utm_source=javascriptweekly&utm_medium=email)
-- [https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
-- [https://www.sitepoint.com/modular-design-patterns-in-javascript/](https://www.sitepoint.com/modular-design-patterns-in-javascript/) <- modules are singletons etc.
-- [https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/](https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/) <- namespacing wtih modules
-
-
 
 ## Basic module declaration
 
@@ -109,3 +99,14 @@ Either way you can return something from the module into the global scope (it ju
 console.log(someNewGlobalVar); // someNewGlobalVar now accesible in global scope```
 ```
 {: .codepen-able}
+
+## References
+
+- [http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) <- the most thorough
+- [https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript )<- practical advantages/disadvantages
+- [http://developer.telerik.com/featured/leveling-up-your-javascript/?utm_source=javascriptweekly&utm_medium=email](http://developer.telerik.com/featured/leveling-up-your-javascript/?utm_source=javascriptweekly&utm_medium=email)
+- [https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
+- [https://www.sitepoint.com/modular-design-patterns-in-javascript/](https://www.sitepoint.com/modular-design-patterns-in-javascript/) <- modules are singletons etc.
+- [https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/](https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/) <- namespacing wtih modules
+
+
