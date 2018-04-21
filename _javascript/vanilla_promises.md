@@ -21,23 +21,42 @@ The name *promise* is to be understood as something that is **promised**. After 
 
 ## Introduction - basic syntax
 
+Example, wihtout actually calling an external system:
+
 ```js
+// Mimick call to long running process
+let getResponse = function () {
+	return true
+}
+
+// Declare the promise
 var p = new Promise(function(resolve, reject) {
 	
-	// Do an async task async task and then...
-
-	if(/* good condition */) {
-		resolve('Success!');
-	}
-	else {
-		reject('Failure!');
-	}
+  console.log('inside promise')
+  	
+  // Call long running process.. (and do other stuff)
+  let response = getResponse()
+  console.log('inside promise - after call to long running process')
+  	
+  // You might what to do stuff with response
+  
+  // and then either resolve or reject the promise...
+  if(response === true) {
+	resolve('Success!');
+  }
+  else {
+	reject('Failure!');
+  }
 });
 
-p.then(function() { 
-	/* do something with the result */
-}).catch(function() {
-	/* error :( */
+console.log('after promise declaration')
+// Use the promise
+
+p.then(function(val) { 
+  // handle success	
+  console.log('the promise succeded', val)
+}).catch(function(e) {
+	console.log('the promise failed', e)
 })
 ```
 {: .codepen-able}
