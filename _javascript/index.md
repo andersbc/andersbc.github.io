@@ -9,11 +9,11 @@ breadcrumb: javascript
 
 {% for jspages in site.javascript %}
 
-
-<a href="{{ jspages.url | prepend: site.baseurl }}">
-        <h2>{{ jspages.title }}</h2>
-</a>
-
+<h2>
+  <a href="{{ jspages.url | prepend: site.baseurl }}">
+  {{ jspages.title }}
+  </a>
+</h2>
 <p class="post-excerpt">{{ jspages.description | truncate: 160 }}</p>
 
 {% endfor %}
