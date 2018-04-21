@@ -81,7 +81,7 @@ $(".codepen-able").each(function() {
       .replace(/'/g, "&apos;");
 
  var form = 
-      '<form action="http://codepen.io/pen/define" method="POST" target="_blank">' + 
+      '<form action="https://codepen.io/pen/define" method="POST" target="_blank">' + 
         '<input type="hidden" name="data" value=\'' + 
           JSONstring + 
           '\'>' +
