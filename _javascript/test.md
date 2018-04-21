@@ -7,7 +7,7 @@ slug: module
 breadcrumb: module
 ---
 
-Note: this page is about the classical javascript 'module pattern' and not the specific es6+ module construct, with exports/imports etc. 
+Note: this page is about the classical javascript 'module pattern' and not the specific es6+ module construct, with exports/imports etc.. 
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code. The module pattern allows for private and public access levels.
 
@@ -107,5 +107,3 @@ console.log(someNewGlobalVar); // someNewGlobalVar now accesible in global scope
 - [https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
 - [https://www.sitepoint.com/modular-design-patterns-in-javascript/](https://www.sitepoint.com/modular-design-patterns-in-javascript/) <- modules are singletons etc.
 - [https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/](https://www.kenneth-truyers.net/2013/04/27/javascript-namespaces-and-modules/) <- namespacing wtih modules
-
-
