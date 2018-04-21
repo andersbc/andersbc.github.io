@@ -1,7 +1,11 @@
+---
 layout: collectionpage
-categories: js-design-patterns
+title: Js vanilla promises
+published: true
+categories: js-notes
 slug: module
 breadcrumb: module
+---
 
 ## A New Post
 
