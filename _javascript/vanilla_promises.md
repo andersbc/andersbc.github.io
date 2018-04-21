@@ -25,11 +25,8 @@ The name *promise* is to be understood as something that is **promised**. After 
 ## References
 
 - [https://scotch.io/tutorials/javascript-promises-for-dummies](https://scotch.io/tutorials/javascript-promises-for-dummies) <- best basic intro so far, also covers async/await.
-
-- [https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261) <- another good intro, also have som tips onm best practices.
-
+- [https://davidwalsh.name/promises](https://davidwalsh.name/promises) <- another good intro, also have som tips on best practices.
 - [https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261) <- more in-depth intro, also explores error handling.
-
 - [https://developers.google.com/web/fundamentals/primers/promises](https://developers.google.com/web/fundamentals/primers/promises) <- another intro.
 
 
