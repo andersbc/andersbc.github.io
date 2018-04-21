@@ -21,38 +21,40 @@ The name *promise* is to be understood as something that is **promised**. After 
 
 ## Introduction - basic syntax
 
-Example, wihtout actually calling an external system:
+Example, without actually calling an external system (you don't have to):
 
 ```js
 // Mimick call to long running process
 let getResponse = function () {
-	return true
+	return false
 }
 
-// Declare the promise
-var p = new Promise(function(resolve, reject) {
+// Declare the promise as a fucntion for later use 
+const doStuff = function(){
+  return new Promise(function(resolve, reject) {
 	
-  console.log('inside promise')
+    console.log('inside promise')
   	
-  // Call long running process.. (and do other stuff)
-  let response = getResponse()
-  console.log('inside promise - after call to long running process')
+    // Call long running process.. (and do other stuff)
+    let response = getResponse()
+    console.log('inside promise - after call to long running process')
   	
-  // You might what to do stuff with response
+    // You might what to do stuff with response
   
-  // and then either resolve or reject the promise...
-  if(response === true) {
-	resolve('Success!');
-  }
-  else {
-	reject('Failure!');
-  }
-});
+    // and then either resolve or reject the promise...
+    if(response === true) {
+	    resolve('Success!');
+    }
+    else {
+	    reject('Failure!');
+    }
+  }); 
+} 
 
 console.log('after promise declaration')
-// Use the promise
 
-p.then(function(val) { 
+// Use the promise
+doStuff().then(function(val) { 
   // handle success	
   console.log('the promise succeded', val)
 }).catch(function(e) {
@@ -60,6 +62,41 @@ p.then(function(val) {
 })
 ```
 {: .codepen-able}
+
+
+Simplified version, using es6 constructor syntax 
+
+```js
+// Mimick call to long running process
+let getResponse = () => return false
+
+// Declare the promise as a function for later use 
+const doStuff = () => {
+  return new Promise((resolve, reject) => {
+  	
+    // Call long running process.. (and do other stuff)
+    let response = getResponse()
+  	
+    // and then either resolve or reject the promise...
+    if(response === true) {
+	    resolve('Success!');
+    }
+    else {
+	    reject('Failure!');
+    }
+  )
+}
+
+// Use the promise
+doStuff().then((val) => { 
+  // handle success	
+  console.log('the promise succeded', val)
+}).catch((e) => {
+	console.log('the promise failed', e)
+})
+```
+{: .codepen-able}
+
 
 
 
