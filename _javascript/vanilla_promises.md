@@ -9,7 +9,7 @@ breadcrumb: module
 
 Note: this page is about the classical javascript use of promises and not the newer ```async await```,  etc.
 
-## introduction - what is a promise?
+## Introduction - what is a promise?
 
 Execution of code in js is synchronous, meaning that code execution proceeds in consecutive order, and that the execution process will halt ('block') until an operation has finished, before it goes to the next operation.
 
@@ -19,6 +19,7 @@ The typical use case is communication with external systems, that may take a whi
 
 The name *promise* is to be understood as something that is **promised**. After the promise has been declared, we don't yet know if it will be fullfilled. It is ```pending```. If later on it is fullfilled it is ```resolved```. However, we might also NOT get what we were promised, e.g. because of an error, in which case the promise is ```rejected```. These are the three states of a promise: pending, resolved or rejected.
 
+## Introduction - basic syntax
 
 
 
