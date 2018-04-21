@@ -68,7 +68,8 @@ Simplified version, using es6 constructor syntax
 
 ```js
 // Mimick call to long running process
-let getResponse = () => return false
+let getResponse = () => false
+
 
 // Declare the promise as a function for later use 
 const doStuff = () => {
@@ -84,7 +85,7 @@ const doStuff = () => {
     else {
 	    reject('Failure!');
     }
-  )
+  })
 }
 
 // Use the promise
@@ -94,6 +95,7 @@ doStuff().then((val) => {
 }).catch((e) => {
 	console.log('the promise failed', e)
 })
+
 ```
 {: .codepen-able}
 
